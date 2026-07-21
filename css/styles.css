@@ -94,8 +94,3 @@ img.dibley {
   background-color: #ff8200; 
   border: 1px solid black;
 }
-
-
-[class^="box"] {
-  border: 1px solid black;
-}
