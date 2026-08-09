@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Lastname Firstname: 225</title>
+    <title>Bottner Aaron: 225</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
     <!-- Bootstrap core CSS -->
     <link href="css/styles.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Firstname Lastname</a>
+    <a class="navbar-brand" href="#">Aaron Bottner</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,7 +33,7 @@
                 <a class="nav-link" href="grid.html">Grid</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="components.html">Carousel</a>
+                <a class="nav-link" href="carousel.html">Carousel</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -49,15 +49,35 @@
 
     <script>
         const user = {
-            name: '',
-            imageUrl: '',
-            bio: ''
+            name: 'Aaron',
+            imageUrl: 'images/mephoto.png',
+            bio: 'Hello, my name is Aaron. I am currently pursuing my bachelors degree in Web Design and Development, and hope to gain knowledge and expand creative ability to better my career with fulfilling work. In my free time, I enjoy spending time with my friends and family who luckily live near by. My family and I enjoy getting to together to go on hikes and bike rides. We recently went on our yearly trip to Door County, WI and my niece got to ride on the trails for the first time connected to my bike. It was chaotic but a good time.'
         };
 
         // Step one - Create a React element
+const heading = React.createElement(
+            'h1',
+            null,
+            user.name
+        );
 
+        const image = React.createElement(
+            'img',
+            {
+                src: user.imageUrl,
+                alt: user.name
+            }
+        );
+        
+        const paragraph = React.createElement(
+            'p',
+            null,
+            user.bio
+        );
         // Step 2: Render the React element
-
+        ReactDOM.render(heading, document.getElementById('h1'));
+        ReactDOM.render(image, document.getElementById('img'));
+        ReactDOM.render(paragraph, document.getElementById('content'));
     </script>
 
 </main><!-- /.container -->
