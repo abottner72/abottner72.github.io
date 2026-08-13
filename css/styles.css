@@ -94,3 +94,23 @@ img.dibley {
   background-color: #ff8200; 
   border: 1px solid black;
 }
+
+/* Town image container */
+.town-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+/* Responsive town images */
+.town-images img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
