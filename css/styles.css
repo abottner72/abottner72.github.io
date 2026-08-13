@@ -114,3 +114,17 @@ img.dibley {
     object-fit: contain;
     margin: 0 auto;
 }
+
+.btn {
+    border: 2px solid black;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn:active {
+    background-color: black;
+    color: white;
+}
