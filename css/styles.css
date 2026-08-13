@@ -115,16 +115,16 @@ img.dibley {
     margin: 0 auto;
 }
 
-.btn {
+#townList .btn {
     border: 2px solid black;
 }
 
-.btn:hover {
+#townList .btn:hover {
     background-color: black;
     color: white;
 }
 
-.btn:active {
+#townList .btn:active {
     background-color: black;
     color: white;
 }
