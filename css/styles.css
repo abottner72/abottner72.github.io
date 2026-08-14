@@ -105,6 +105,10 @@ img.dibley {
     padding: 0 15px;
 }
 
+.comm-content p {
+    font-size: 14px;
+}
+
 /* Responsive town images */
 .town-images img {
     display: block;
