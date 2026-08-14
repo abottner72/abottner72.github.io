@@ -13,7 +13,7 @@ function App() {
 
     return (
         <div>
-            <button onClick={moveBike}>
+            <button className="move-bike" onClick={moveBike}>
                 Move Bike
             </button>
 
