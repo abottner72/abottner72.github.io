@@ -213,6 +213,22 @@ img.dibley {
 }
 
 footer {
-    height: 75px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 20px;
     background-color: #24242d;
+}
+
+footer p:first-child {
+    text-align: left;
+}
+
+footer p:last-child {
+    text-align: right;
+}
+
+footer img {
+    width: 75px;
+    height: auto;
 }
