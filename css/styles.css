@@ -158,6 +158,11 @@ img.dibley {
     text-align: center;
 }
 
+.move-bike {
+    display: block;
+    margin: 0 auto 20px;
+}
+
 #Bike {
     display: block;
     width: 100%;
