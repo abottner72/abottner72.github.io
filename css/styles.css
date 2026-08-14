@@ -105,6 +105,13 @@ img.dibley {
     padding: 0 15px;
 }
 
+.comm-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
 .comm-content p {
     font-size: 14px;
 }
