@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 const [position, setPosition] = useState(0);
 
 function moveBike() {
