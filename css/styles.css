@@ -159,9 +159,14 @@ img.dibley {
 }
 
 #Bike {
-  position: relative;
-  left: 0;
-  transition: left 0.3s ease;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 30px auto;
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease;
 }
 
 #Bike.position-50 {
@@ -186,6 +191,20 @@ img.dibley {
 
 #Bike.position-300 {
   left: 300px;
+}
+
+@media (max-width: 600px) {
+    #Bike.position-50 {
+        left: 25px;
+    }
+
+    #Bike.position-100 {
+        left: 50px;
+    }
+
+    #Bike.position-150 {
+        left: 75px;
+    }
 }
 
 footer {
