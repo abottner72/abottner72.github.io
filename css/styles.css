@@ -164,6 +164,18 @@ img.dibley {
   left: 150px;
 }
 
+#Bike.position-200 {
+  left: 200px;
+}
+
+#Bike.position-250 {
+  left: 250px;
+}
+
+#Bike.position-300 {
+  left: 300px;
+}
+
 footer {
     height: 75px;
     background-color: #24242d;
