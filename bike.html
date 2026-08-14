@@ -14,7 +14,8 @@
 
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="bike.js" defer></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="bike.js" type="text/babel"></script>
 
 </head>
 
@@ -49,16 +50,9 @@
 </nav> 
 
       <main>
-        <button onClick={moveBike}>
-        Move Bike
-        </button>
-
-        <img
-        id="Bike"
-        src="images/bike.jpg"
-        alt="Black bike"
-        className={`position-${position}`}
-/>
+        <main>
+    <div id="bike-root"></div>
+</main>
       </main>
 
       <footer></footer>
