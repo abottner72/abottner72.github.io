@@ -1,7 +1,7 @@
 const user = {
             name: 'Aaron',
             imageUrl: 'images/mephoto.png',
-            bio: 'Hello, my name is Aaron. I am currently pursuing my bachelors degree in Web Design and Development, and hope to gain knowledge and expand creative ability to better my career with fulfilling work. In my free time, I enjoy spending time with my friends and family who luckily live near by. My family and I enjoy getting to together to go on hikes and bike rides. We recently went on our yearly trip to Door County, WI and my niece got to ride on the trails for the first time connected to my bike. It was chaotic but a good time.'
+            bio: 'Hello, my name is Aaron. I am currently pursuing my bachelors degree in Web Design and Development, and hope to gain knowledge and expand creative ability to better my career with fulfilling work. In my free time, I enjoy spending time with my friends and family who luckily live near by. My family and I enjoy getting together to go on hikes and bike rides. We recently went on our yearly trip to Door County, WI and my niece got to ride on the trails for the first time connected to my bike. It was chaotic but a good time.'
         };
 
         // Create the h1 element
