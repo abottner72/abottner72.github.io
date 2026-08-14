@@ -124,6 +124,7 @@ img.dibley {
     height: auto;
     object-fit: contain;
     margin: 0 auto;
+    border: 3px solid black;
 }
 
 #townList .btn {
