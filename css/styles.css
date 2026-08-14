@@ -204,6 +204,108 @@ img.dibley {
 }
 
 @media (max-width: 600px) {
+
+    /* page spacing */
+    body {
+        padding-top: 4.5rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Paragraphs */
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Home page */
+    .home_2col {
+        margin-bottom: 15px;
+    }
+
+    .home_2col img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Communities page */
+    .comm-content {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .comm-content h1 {
+        font-size: 2rem;
+    }
+
+    .comm-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #townList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    #townList .btn {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .town-images {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .town-images img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Bike page */
+    .bike-content {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .bike-content h1 {
+        font-size: 2rem;
+    }
+
+    .bike-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .move-bike {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto 20px;
+    }
+
+    #Bike {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Bike movement on smaller screens */
     #Bike.position-50 {
         left: 25px;
     }
@@ -214,6 +316,41 @@ img.dibley {
 
     #Bike.position-150 {
         left: 75px;
+    }
+
+    #Bike.position-200 {
+        left: 100px;
+    }
+
+    #Bike.position-250 {
+        left: 125px;
+    }
+
+    #Bike.position-300 {
+        left: 150px;
+    }
+
+    /* Footer */
+    footer {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer p:first-child,
+    footer p:last-child {
+        text-align: center;
+    }
+
+    footer img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin: 0;
     }
 }
 
