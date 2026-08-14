@@ -1,9 +1,9 @@
 const [position, setPosition] = useState(0);
 
 function moveBike() {
-  setPosition(position + 50);
-}
-
-function resetBike() {
-  setPosition(0);
+  if (position >= 150) {
+    setPosition(0);
+  } else {
+    setPosition(position + 50);
+  }
 }
