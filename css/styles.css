@@ -95,6 +95,17 @@ img.dibley {
   border: 1px solid black;
 }
 
+.comm-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.comm-content p {
+    font-size: 14px;
+}
+
 /* Town image container */
 .town-images {
     width: 100%;
@@ -103,17 +114,6 @@ img.dibley {
     align-items: center;
     margin-top: 30px;
     padding: 0 15px;
-}
-
-.comm-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.comm-content p {
-    font-size: 14px;
 }
 
 /* Responsive town images */
