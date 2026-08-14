@@ -229,7 +229,8 @@ footer p:last-child {
 }
 
 footer img {
-    width: 75px;
+    width: 150px;
+    max-width: 100%;
     height: auto;
 }
 
