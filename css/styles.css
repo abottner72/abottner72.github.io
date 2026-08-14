@@ -216,7 +216,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
     background-color: #24242d;
 }
 
@@ -229,7 +229,7 @@ footer p:last-child {
 }
 
 footer img {
-    width: 150px;
+    width: 200px;
     max-width: 100%;
     height: auto;
 }
