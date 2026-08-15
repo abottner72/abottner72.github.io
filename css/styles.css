@@ -210,7 +210,7 @@ img.dibley {
 #Bike.position-300 {
   left: 300px;
 }
-
+/* mobile friendly adjustments */
 @media (max-width: 600px) {
 
     /* page spacing */
