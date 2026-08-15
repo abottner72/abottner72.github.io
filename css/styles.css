@@ -185,7 +185,6 @@ img.dibley {
     position: relative;
     left: 0;
     transition: left 0.3s ease;
-    background-color: white;
 }
 /* bike moving in 50px increments up to 300px */
 #Bike.position-50 {
