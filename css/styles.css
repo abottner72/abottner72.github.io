@@ -264,6 +264,18 @@ img.dibley {
         padding: 10px 5px;
     }
 
+    .town-images {
+        width: 100%;
+        padding: 0;
+    }
+
+    .town-images img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+}
+
     /* Bike page */
     .bike-content {
         width: 95%;
