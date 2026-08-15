@@ -29,7 +29,7 @@ function App() {
             alt="Black bike"
             className={`position-${position}`}
             />
-            />
+    
         </div>
     );
 }
