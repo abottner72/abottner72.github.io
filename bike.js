@@ -19,10 +19,10 @@ function App() {
 
             <img
             id="Bike"
-            src="images/bike_webp.webp"
+            src="images/bike.jpg"
             srcSet="
-            images/bike_mobile.webp 500w,
-            images/bike_webp.webp 800w"
+            images/bike_mobile.jpg 500w,
+            images/bike.jpg 800w"
             sizes="(max-width: 600px) 100vw, 800px"
             width="800"
             height="517"
