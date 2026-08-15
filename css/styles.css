@@ -45,7 +45,15 @@ margin-right: 10px;
 }
 
 img.dibley {
-    width: 350px;
+    width: 500px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    img.dibley {
+        width: 250px;
+        height: auto;
+    }
 }
 
 .wrapper {
