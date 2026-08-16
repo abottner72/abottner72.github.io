@@ -4,6 +4,9 @@
 /*GLOBAL*/
 body {
     padding-top: 5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -13,7 +16,9 @@ h1,h2,h3,h4,h5,h6 {
 
 main {
     padding: 20px;
+    flex: 1;
 }
+
 main.container-fluid {
     width: 50%;
 }
@@ -24,7 +29,7 @@ p {
 }
 
 nav {
-    margin-bottom: 120px;
+    margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -40,7 +45,15 @@ margin-right: 10px;
 }
 
 img.dibley {
-    max-width: 100%
+    width: 500px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    img.dibley {
+        width: 250px;
+        height: auto;
+    }
 }
 
 .wrapper {
@@ -93,4 +106,277 @@ img.dibley {
   grid-row: 5;
   background-color: #ff8200; 
   border: 1px solid black;
+}
+/* container for community text and images */
+.comm-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.comm-content p {
+    font-size: 14px;
+}
+
+/* Town image container */
+.town-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+/* Responsive town images */
+.town-images img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+/* button selection transition, hover, and active selection color */
+#townList .btn {
+    border: 2px solid black !important;
+    background-color: white !important;
+    color: black !important;
+    transition: 0.2s;
+}
+
+#townList .btn:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+#townList .btn:active {
+    background-color: black !important;
+    color: white !important;
+    transform: scale(0.95);
+}
+
+.bike-content p {
+    font-size: 16px;
+}
+
+.bike-content h1,
+.bike-content p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.move-bike {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#Bike {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 30px auto;
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease;
+}
+/* bike moving in 50px increments up to 300px */
+#Bike.position-50 {
+  left: 50px;
+}
+
+#Bike.position-100 {
+  left: 100px;
+}
+
+#Bike.position-150 {
+  left: 150px;
+}
+
+#Bike.position-200 {
+  left: 200px;
+}
+
+#Bike.position-250 {
+  left: 250px;
+}
+
+#Bike.position-300 {
+  left: 300px;
+}
+/* mobile friendly adjustments */
+@media (max-width: 600px) {
+
+    /* page spacing */
+    body {
+        padding-top: 4.5rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Paragraphs */
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Communities page */
+    .comm-content {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .comm-content h1 {
+        font-size: 2rem;
+    }
+
+    .comm-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #townList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    #townList .btn {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .town-images {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .town-images img {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Bike page */
+    .bike-content {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .bike-content h1 {
+        font-size: 2rem;
+    }
+
+    .bike-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .move-bike {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto 20px;
+    }
+
+    #Bike {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Bike movement on smaller screens, 25px increments instead of 50px */
+    #Bike.position-50 {
+        left: 25px;
+    }
+
+    #Bike.position-100 {
+        left: 50px;
+    }
+
+    #Bike.position-150 {
+        left: 75px;
+    }
+
+    #Bike.position-200 {
+        left: 100px;
+    }
+
+    #Bike.position-250 {
+        left: 125px;
+    }
+
+    #Bike.position-300 {
+        left: 150px;
+    }
+
+   /* Footer for mobile - centering and placing text, image, text */
+    footer {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer p:first-child,
+    footer p:last-child {
+        text-align: center;
+    }
+
+    footer img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+/* footer for desktop - aligning text left and right, adjusting image size */
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #24242d;
+}
+
+footer p:first-child {
+    text-align: left;
+}
+
+footer p:last-child {
+    text-align: right;
+}
+
+footer img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer p {
+    color: #FFFFFF;
 }

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Brief stories and descriptions of Door County's popular towns and villages with an interactive selection of photos to support.">
+
+    <title>Communities: Aaron Bottner</title>
+    <link rel="icon" href="images/favicon-64x64.png" sizes="any">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@1/dist/vue.js"></script>
+    <script src="communities.js" defer></script>
+
+</head>
+
+    <body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Aaron Bottner</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="grid.html">Grid</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="carousel.html">Carousel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="communities.html">Communities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bike.html">Bike</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>   
+
+<main class="comm-content">
+
+<h1>Popular Door County Communities</h1>
+    <p>Sticking with the theme in my pages mentioning Door County, WI, it seems like these towns and villages are the most popular to visit amongst people who travel there. Here I have chosen what I think those to be and a picture of a restaurant, hotel, shop, or location that has significance to my family and I. Egg Harbor, we have the Shipwrecked Brew Pub that has been rebuilt recently after being burnt down. My dad loves to tell the story of when I fell and cracked my head open when I was 4, while we were waiting for a table. Baileys Harbor is our favorite town and we try to stay at the Baileys Harbor Yacht Club Resort if there is availability. Fish Creek, is a very touristy town, but it has the best biking trails and we tend to start our day from the Nor Door cycle shop before taking off on our rides. Emphraim is rather small but it once was home to the Czarnuzka Soup Bar which was pretty much the best soup of all time run by one guy who literally studied how to make all kinds of soup throughout Europe and became a god at it. Sadly it has since closed. Sister Bay, also quite touristy, but is home to Al Johnson's Swedish Restaurant which is famous for having goats on the roof. It is a fun place with great food. Lastly, Gills Rock is one of the most northern towns on the peninsula and is a port for ferrys to go to the islands off the coast. Driving through Gills Rock there is cool curvy road to drive through that looks awesome in autumn. Click the town names to see and I recommend visiting!</p>
+  <div id="townList">
+
+  <button v-on:click="showTown('Egg Harbor')" class="btn">
+    EGG HARBOR
+  </button>
+
+  <button v-on:click="showTown('Baileys Harbor')" class="btn">
+    BAILEYS HARBOR
+  </button>
+
+  <button v-on:click="showTown('Fish Creek')" class="btn">
+    FISH CREEK
+  </button>
+
+  <button v-on:click="showTown('Ephraim')" class="btn">
+    EPHRAIM
+  </button>
+
+  <button v-on:click="showTown('Sister Bay')" class="btn">
+    SISTER BAY
+  </button>
+
+  <button v-on:click="showTown('Gills Rock')" class="btn">
+    GILLS ROCK
+  </button>
+
+  <div class="town-images">
+
+    <img v-if="town === 'Egg Harbor'"
+         src="images/eggharbor_webp.webp"
+         srcset="
+             images/eggharbor_mobile.webp 600w,
+             images/eggharbor_webp.webp 1200w"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="Shipwrecked restaurant in Egg Harbor, WI">
+
+    <img v-if="town === 'Baileys Harbor'"
+         src="images/baileysharbor_webp.webp"
+         srcset="
+             images/baileysharbor_mobile.webp 600w,
+             images/baileysharbor_webp.webp 1200w"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="Baileys Harbor Yacht Club Resort in Baileys Harbor, WI">
+
+    <img v-if="town === 'Fish Creek'"
+         src="images/fishcreek_webp.webp"
+         srcset="
+             images/fishcreek_mobile.webp 600w,
+             images/fishcreek_webp.webp 1200w"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="Nor Door Sport and Cyclery in Fish Creek, WI">
+
+    <img v-if="town === 'Ephraim'"
+         src="images/ephraim_webp.webp"
+         srcset="
+             images/ephraim_mobile.webp 600w,
+             images/ephraim_webp.webp 1200w"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="Czarnuszka Soup Bar in Ephraim, WI">
+
+    <img v-if="town === 'Sister Bay'"
+         src="images/sisterbay_webp.webp"
+         srcset="
+             images/sisterbay_mobile.webp 600w,
+             images/sisterbay_webp.webp 1200w"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="Al Johnson's Swedish Restaurant in Sister Bay, WI">
+
+    <img v-if="town === 'Gills Rock'"
+         src="images/gillsrock_webp.webp"
+         srcset="
+             images/gillsrock_mobile.webp 600w,
+             images/gillsrock_webp.webp 1200w"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="Famous winding road in Gills Rock, WI">
+
+</div>
+  
+</main>
+
+        <footer>
+          <p>Aaron Bottner</p>
+          <a href="index.html">
+        <img src="images/shipwheel-140x100.png" alt="Wooden ship wheel">
+    </a>
+          <p>WEBD-225</p>
+      </footer>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
